@@ -1,0 +1,15 @@
+{
+  "name": "DrunkSquadGaming",
+  "short_name": "DrunkSquad",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simple DrunkSquad Site.",
+  "icons": [
+    {
+      "src": "null",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ]
+}
