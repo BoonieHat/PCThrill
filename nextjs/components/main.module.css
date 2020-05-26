@@ -175,6 +175,7 @@
 
 .indexContent {
   padding-top: 80px;
+  padding-bottom: 80px;
   font-family: "Inter", sans-serif;
 }
 
@@ -194,30 +195,51 @@
 }
 
 .indexArticles {
+  justify-content: center;
   display: grid;
   grid-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
   grid-row-gap: 30px;
   row-gap: 30px;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(auto-fill, 300px);
   width: 100%;
 }
 
 .articleCard {
   transition: .5s;
-  background: #111;
+  background: #fff;
   grid-column-start: auto;
   grid-row-start: auto;
-  background-repeat: no-repeat;
-  background-size: auto;
+  display: flex;
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px rgba(104, 109, 121, 0.2);
+}
+.articleCard a {
+  text-decoration: none;
+}
+
+.articleCard h2 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #000;
+}
+
+.articleCard time {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
 }
 
 .articleCardOverlay {
   cursor: pointer;
   width: 260px;
-  height: 260px;
+  height: 300px;
   padding: 20px;
+  border-radius: 20px;
   text-align: left;
   display: flex;
   flex-direction: column;
