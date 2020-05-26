@@ -10,10 +10,10 @@ function ArticleCard(props) {
       <Link href="/article/[slug]" as={`/article/${props.slug}`}>
         <a>
           <div className={main.articleCardImage} style={{backgroundImage: `url(${urlFor(props.image).width(300).url()})` }}></div>
-          <article className={main.mtAuto}>
+          <div className={main.mtAuto}>
             <time>{new Date(props.updated).toDateString()}</time>
             <h2>{props.title}</h2>
-          </article>
+          </div>
         </a>
       </Link>{' '}
     </div>
