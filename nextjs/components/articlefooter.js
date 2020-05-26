@@ -8,11 +8,13 @@ import ArticleCard from "../components/articlecard";
 function article(props) {
   return (
     <div className={main.container}>
-      <h2>Latest Articles you might like</h2>
-      <div className={main.indexArticles}>
-        {props.props.map(({ _id, title = '', slug = '', _updatedAt = '', mainImage = '' }) => slug && (
-          <ArticleCard key={_id} title={title} slug={slug.current} updated={_updatedAt} image={mainImage} />)
-        )}
+      <div className={main.articleFooter}>
+        <h3>Latest Articles you might like</h3>
+        <div className={main.indexArticles}>
+          {props.props.map(({ _id, title = '', slug = '', _updatedAt = '', mainImage = '' }) => slug && (
+            <ArticleCard key={_id} title={title} slug={slug.current} updated={_updatedAt} image={mainImage} />)
+          )}
+        </div>
       </div>
     </div>
   )

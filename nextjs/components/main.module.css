@@ -121,47 +121,6 @@
   }
 }
 
-.postlist {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-}
-
-.postlist li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.postlist li a {
-  font-weight: 900;
-  color: #363636;
-  text-decoration: none;
-}
-
-.post-list h4 {
-  font-size: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 1.2;
-}
-
-.postlist .postcard {
-  border-bottom: 1px dotted #303030;
-  margin: 0;
-  display: block;
-  padding: 30px;
-}
-
-.postlist .postcard:hover {
-  background-color: rgb(236, 236, 236);
-  transition: 0.5s;
-}
-
-.postlist .postcard time {
-  font-weight: 700;
-}
-
 .content {
   padding-top: 80px;
   font-family: "Inter", sans-serif;
@@ -175,7 +134,6 @@
 
 .indexContent {
   padding-top: 80px;
-  padding-bottom: 80px;
   font-family: "Inter", sans-serif;
 }
 
@@ -197,12 +155,13 @@
 .indexArticles {
   justify-content: center;
   display: grid;
-  grid-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
-  grid-row-gap: 30px;
-  row-gap: 30px;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  grid-row-gap: 20px;
+  row-gap: 20px;
+  padding-bottom: 80px;
+  grid-template-columns: repeat(auto-fill, 280px);
   width: 100%;
 }
 
@@ -212,7 +171,7 @@
   grid-column-start: auto;
   grid-row-start: auto;
   display: flex;
-  width: 260px;
+  width: 220px;
   height: 300px;
   padding: 20px;
   border-radius: 20px;
@@ -228,38 +187,38 @@
   color: #000;
 }
 
+.articleCard:hover {
+  box-shadow: 0px 15px 10px rgba(104, 109, 121, 0.3);
+}
+
+.articleCard .articleCardImage {
+  width: 220px;
+  height: 160px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(104, 109, 121, 0.2);
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.articleCard:hover .articleCardImage {
+  height: 200px !important;
+  transition: 0.5s;
+}
+
+.articleCard:hover article h2 {
+  font-size: 18px;
+  transition: 0.5s;
+}
+
 .articleCard time {
   font-size: 14px;
   font-weight: 700;
   color: rgb(68, 68, 68);
 }
-
-.articleCardOverlay {
-  cursor: pointer;
-  width: 260px;
-  height: 300px;
-  padding: 20px;
-  border-radius: 20px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  -o-transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  z-index: 10;
-  color: #fff;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.9) 100%);
-  border: 0px dashed #33e2c5;
-}
-
-.articleCardOverlay:hover {
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%,rgba(51, 226, 197, 0.7) 100%);
-  border: 3px dashed rgb(51, 226, 197);
-}
-
 
 .articleMainImage {
   max-width: 100%;
@@ -275,6 +234,12 @@
 
 .articleAuthorAvatar {
   border-radius: 50%;
+}
+
+.articleFooter h3 {
+  font-weight: 900;
+  margin: 50px 0px 50px;
+  border-bottom: 2px dashed #cccccc;
 }
 
 .content h1 { font-size: 60px; }
@@ -294,7 +259,7 @@
 }
 
 .content p {
-  margin: 0px 0px 30px;
+  margin: 0px 0px 50px;
 }
 
 .content a {
@@ -320,7 +285,7 @@
 @media only screen and (max-width: 800px) {
  .container {
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
   }
 }
 
