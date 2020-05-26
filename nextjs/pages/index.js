@@ -12,7 +12,7 @@ function Index(props) {
   console.log(posts)
   return (
     <Layout>
-      <HtmlHead title={"PC Thrill"} description={"PC Thrill is your go to for PC Gaming related builds, reviews, demos, updates and news."} />
+      <HtmlHead title={"PC Thrill"} description={"PC Thrill is your go to for trending Gaming PC news, builds, guides, and reviews on all your favorite brands."} />
       <Header />
       <div className={main.container}>
         <main className={main.indexContent}>
