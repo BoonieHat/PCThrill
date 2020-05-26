@@ -12,7 +12,7 @@ function article(props) {
         <h1 alt={`Article Headline: ${props.title}`}>{props.title}</h1>
         {props.categories && (
           <ul>Tags
-            {props.categories.map(category => <li key={category}>{category}</li>)}
+            {props.categories.map(category => <li key={_id}>{category}</li>)}
           </ul>
         )}
         {props.authorImage && (
