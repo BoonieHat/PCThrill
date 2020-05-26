@@ -1,12 +1,19 @@
 import Link from 'next/link'
-
+import index from '../components/index.module.css';
 function ArticleCard(props) {
   return (
-    <li key={props.id}>
+
+    <li className={index.postcard} key={props.id}>
       <Link href="/[slug]" as={`/${props.slug}`}>
-        <a>{props.title}</a>
+        <a>
+          <h4>{props.title}</h4>
+        </a>
       </Link>{' '}
-      ({new Date(props.updated).toDateString()})
+      <div>
+        <time>
+          {new Date(props.updated).toDateString()}
+        </time>
+      </div>
     </li>
   )
 }
