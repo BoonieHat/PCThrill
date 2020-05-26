@@ -16,7 +16,7 @@ const Post = (props) => {
   const { title = 'Unknown Article', name = 'Unknown Article', categories, authorImage, mainImage, body = [] } = props.articles
   return (
     <Layout>
-      <HtmlHead title={title} description={name} image={urlFor(mainImage).width(628).url()} />
+      <HtmlHead title={title} description={body[0].children[0].text} image={urlFor(mainImage).width(628).url()} />
       <Header />
       <Article title={title} name={name} categories={categories} authorImage={authorImage} mainImage={mainImage} body={body} />
       <ArticleFooter props={props.posts} />
