@@ -5,7 +5,8 @@
   flex-direction: column;
   text-align: center;
   min-height: 250px;
-  margin-top: 120px;
+  margin-top: auto;
   font-size: .85em;
-  opacity: .8;
+  color: #fff;
+  background-color: #000;
 }

@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import footercss from '../components/footer.module.css';
-
+import main from '../components/main.module.css';
 function footer(props) {
   return (
-    <footer className={footercss.main}>
+    <footer className={main.container}>
       <div className={footercss.socialmedia}>
         <a href="">Twitter</a>
         <a href="">Instagram</a>

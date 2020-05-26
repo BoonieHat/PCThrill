@@ -1,15 +1,30 @@
 import Link from 'next/link'
-import styles from '../components/header.module.css';
+import SvgLogo from '../components/logo';
+import main from '../components/main.module.css';
 
 function Header(props) {
   return (
-    <div className={styles.header}>
-      <div className={styles.headerContainer}>
-        <button className={`${styles.buttonHeader} ${styles.mrauto}`}>
+    <div className={main.header}>
+      <div className={main.container}>
+        <div className={main.headerContainer}>
           <Link href="/">
-            <a>PC Thrill</a>
+            <a className={`${main.mrauto}`}>
+              <SvgLogo className={`${main.headerLogo}`} />
+            </a>
           </Link>
-        </button>
+          <div className={`${main.mlauto}`}>
+            <button className={`${main.buttonHeader}`}>
+              <Link href="/">
+                <a>Subscribe</a>
+              </Link>
+            </button>
+            <button className={`${main.buttonHeader}`}>
+              <Link href="/">
+                <a>About</a>
+              </Link>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   )

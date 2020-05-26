@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import index from '../components/index.module.css';
+import main from '../components/main.module.css';
+
 function ArticleCard(props) {
   return (
-
-    <li className={index.postcard} key={props.id}>
+    <li className={main.postcard} key={props.id}>
       <Link href="/[slug]" as={`/${props.slug}`}>
         <a>
           <h4>{props.title}</h4>

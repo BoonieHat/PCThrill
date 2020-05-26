@@ -1,14 +1,14 @@
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import client from '../client'
-import articleContent from '../components/article.module.css';
+import main from '../components/main.module.css';
 
 function urlFor(source) { return imageUrlBuilder(client).image(source) }
 
 function article(props) {
   return (
-    <main className={articleContent.container}>
-      <article className={articleContent.content}>
+    <main className={main.container}>
+      <article className={main.content}>
         <h1 alt={`Article Headline: ${props.title}`}>{props.title}</h1>
         {props.categories && (
           <ul>Tags
