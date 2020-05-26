@@ -8,10 +8,10 @@ function footer(props) {
     <footer className={main.container}>
       <div className={main.footer}>
         <div className={main.socialmedia}>
-          <a href="">Twitter</a>
-          <a href="">Instagram</a>
-          <a href="">Pinterest</a>
-          <a href="">Reddit</a>
+          <a href="https://twitter.com/PcThrill">Twitter</a>
+          <a href="https://www.instagram.com/pcthrill/">Instagram</a>
+          <a href="https://www.pinterest.com/pcthrill/">Pinterest</a>
+          <a href="https://www.reddit.com/user/pcthrill">Reddit</a>
         </div>
         <div className={main.policy}>
           Google
