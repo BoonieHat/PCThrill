@@ -167,6 +167,57 @@
   font-family: "Inter", sans-serif;
 }
 
+.indexContent {
+  padding-top: 80px;
+  font-family: "Inter", sans-serif;
+}
+
+.indexArticles {
+  display: grid;
+  grid-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  grid-row-gap: 30px;
+  row-gap: 30px;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+}
+
+.articleCard {
+  transition: .5s;
+  background: #111;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.articleCardOverlay {
+  cursor: pointer;
+  width: 260px;
+  height: 260px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  -o-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 10;
+  color: #fff;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.9) 100%);
+  border: 0px dashed #33e2c5;
+}
+
+.articleCardOverlay:hover {
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.7) 100%);
+  border: 3px dashed #33e2c5;
+  box-shadow: 0px 30px 10px rgba(31, 196, 166, 1);
+}
+
 .articleMainImage {
   max-width: 100%;
   max-height: 100%;
@@ -196,8 +247,8 @@
 }
 
 .content a {
-  color: #00aeff;
-  border-bottom: 1px dotted #00aeff;
+  color: #33e2c5;
+  border-bottom: 1px dotted #33e2c5;
   text-decoration: none;
 }
 
@@ -221,6 +272,10 @@
     width: 95%;
   }
 }
+
+
+
+
 .footer {
   font-size: 20px;
   font-weight: 500;
@@ -241,8 +296,8 @@
 .footer .socialmedia a {
   text-decoration: none;
   margin: 0px 5px;
-  color: #00aeff;
-  border-bottom: 2px dotted #303030;
+  color: #33e2c5;
+  border-bottom: 2px dotted #33e2c5;
 }
 
 .footer .policy {
@@ -252,8 +307,8 @@
 .footer .policy a {
   text-decoration: none;
   margin: 0px 5px;
-  color: #00aeff;
-  border-bottom: 2px dotted #303030;
+  color: #33e2c5;
+  border-bottom: 2px dotted #33e2c5;
 }
 
 .footerLogo {

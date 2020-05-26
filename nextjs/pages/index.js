@@ -9,18 +9,19 @@ import Footer from "../components/footer";
 
 function Index(props) {
   const { posts = [] } = props
+  console.log(posts)
   return (
     <Layout>
       <HtmlHead title={"PC Thrill"} description={"PC Thrill is your go to for PC Gaming related builds, reviews, demos, updates and news."} />
       <Header />
       <div className={main.container}>
-        <main className={main.content}>
+        <main className={main.indexContent}>
           <h1>PC Thrill</h1>
-          <ol className={main.postlist}>
-            {posts.map(({ _id, title = '', slug = '', _updatedAt = '' }) => slug && (
-              <ArticleCard id={_id} title={title} slug={slug.current} updated={_updatedAt} />)
+          <div className={main.indexArticles}>
+            {posts.map(({ _id, title = '', slug = '', _updatedAt = '', mainImage = '' }) => slug && (
+              <ArticleCard id={_id} title={title} slug={slug.current} updated={_updatedAt} image={mainImage} />)
             )}
-          </ol>
+          </div>
         </main>
       </div>
       <Footer />
