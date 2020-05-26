@@ -221,3 +221,43 @@
     width: 95%;
   }
 }
+.footer {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 250px;
+  margin-top: 30px;
+  color: rgb(99, 102, 105);
+}
+
+.footer .socialmedia {
+  padding: 10px;
+}
+
+.footer .socialmedia a {
+  text-decoration: none;
+  margin: 0px 5px;
+  color: #00aeff;
+  border-bottom: 2px dotted #303030;
+}
+
+.footer .policy {
+  padding: 10px;
+}
+
+.footer .policy a {
+  text-decoration: none;
+  margin: 0px 5px;
+  color: #00aeff;
+  border-bottom: 2px dotted #303030;
+}
+
+.footerLogo {
+  margin-top: 10px;
+  height: 60px;
+  margin-bottom: 10px;
+}
