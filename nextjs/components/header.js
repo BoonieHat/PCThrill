@@ -8,19 +8,19 @@ function Header(props) {
       <div className={main.container}>
         <div className={main.headerContainer}>
           <Link href="/">
-            <a className={`${main.mrauto}`}>
+            <a className={`${main.mrauto}`} alt="Go to Homepage">
               <SvgLogo className={`${main.headerLogo}`} />
             </a>
           </Link>
           <div className={`${main.mlauto}`}>
             <button className={`${main.buttonHeader}`}>
               <Link href="/">
-                <a>Subscribe</a>
+                <a alt="Go to About Subscribe">Subscribe</a>
               </Link>
             </button>
             <button className={`${main.buttonHeader}`}>
               <Link href="/">
-                <a>About</a>
+                <a alt="Go to About Page">About</a>
               </Link>
             </button>
           </div>
