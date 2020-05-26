@@ -5,7 +5,6 @@ import imageUrlBuilder from '@sanity/image-url'
 function urlFor(source) { return imageUrlBuilder(client).image(source) }
 
 function ArticleCard(props) {
-  console.log(props.image)
   return (
     <div className={main.articleCard} style={{ backgroundImage: `url( ${urlFor(props.image).width(300).url()} )` }} alt="Article Headline Image">
       <Link href="/article/[slug]" as={`/article/${props.slug}`}>

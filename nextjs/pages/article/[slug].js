@@ -3,7 +3,7 @@ import client from '../../client'
 import imageUrlBuilder from '@sanity/image-url'
 
 import HtmlHead from "../../components/head";
-
+import main from '../../components/main.module.css';
 import Header from "../../components/header";
 import Layout from "../../components/layout";
 import Article from "../../components/article";

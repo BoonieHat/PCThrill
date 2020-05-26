@@ -9,7 +9,6 @@ import Footer from "../components/footer";
 
 function Index(props) {
   const { posts = [] } = props
-  console.log(posts)
   return (
     <Layout>
       <HtmlHead title={"PC Thrill"} description={"PC Thrill is your go to for trending Gaming PC news, builds, guides, and reviews on all your favorite brands."} />
@@ -19,7 +18,7 @@ function Index(props) {
           <h1>PC Thrill</h1>
           <div className={main.indexArticles}>
             {posts.map(({ _id, title = '', slug = '', _updatedAt = '', mainImage = '' }) => slug && (
-              <ArticleCard id={_id} title={title} slug={slug.current} updated={_updatedAt} image={mainImage} />)
+              <ArticleCard key={_id} title={title} slug={slug.current} updated={_updatedAt} image={mainImage} />)
             )}
           </div>
         </main>
