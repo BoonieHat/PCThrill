@@ -1,12 +1,12 @@
 import groq from 'groq'
-import client from '../client'
+import client from '../../client'
 
-import HtmlHead from "../components/head";
+import HtmlHead from "../../components/head";
 
-import Header from "../components/header";
-import Layout from "../components/layout";
-import Article from "../components/article";
-import Footer from "../components/footer";
+import Header from "../../components/header";
+import Layout from "../../components/layout";
+import Article from "../../components/article";
+import Footer from "../../components/footer";
 
 const Post = (props) => {
   const { title = 'Unknown Article', name = 'Unknown Article', categories, authorImage, body = [] } = props

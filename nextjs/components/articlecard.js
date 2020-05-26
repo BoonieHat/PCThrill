@@ -4,7 +4,7 @@ import main from '../components/main.module.css';
 function ArticleCard(props) {
   return (
     <li className={main.postcard} key={props.id}>
-      <Link href="/[slug]" as={`/${props.slug}`}>
+      <Link href="/article/[slug]" as={`/article/${props.slug}`}>
         <a>
           <h4>{props.title}</h4>
         </a>
