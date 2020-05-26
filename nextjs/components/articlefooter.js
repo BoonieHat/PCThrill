@@ -9,7 +9,6 @@ function urlFor(source) { return imageUrlBuilder(client).image(source) }
 
 function article(props) {
   const { posts = [] } = props.props
-  console.log(props.props)
   return (
     <div className={main.container}>
       <h2>Recents Articles you might like</h2>

@@ -9,6 +9,7 @@ function article(props) {
   return (
     <main className={main.container}>
       <article className={main.content}>
+        <img className={main.articleMainImage} src={urlFor(props.mainImage).width(720).url()} alt="Article Headline Image" />
         <h1 alt={`Article Headline: ${props.title}`}>{props.title}</h1>
         {props.categories && (
           <ul>Tags
@@ -17,7 +18,7 @@ function article(props) {
         )}
         {props.authorImage && (
           <div>
-            <span alt={`Written by: {props.name}`}>
+            <span alt={`Written by: ${props.name}`}>
               <img src={urlFor(props.authorImage).width(50).url()} alt="Author Avatar" />
               {props.name}
             </span>
