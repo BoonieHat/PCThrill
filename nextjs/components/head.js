@@ -22,6 +22,7 @@ export default (props) => (
     <meta property="twitter:image" content={props.image}></meta>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet"></link>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"></link>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"></link>
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"></link>

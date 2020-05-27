@@ -1,9 +1,9 @@
 import imageUrlBuilder from '@sanity/image-url'
-import client from '../client'
+import client from '../../client'
 import groq from 'groq'
-import main from '../components/main.module.css';
+import main from '../main.module.css';
 
-import ArticleCard from "../components/articlecard";
+import ArticleCard from "../articlecard";
 
 function article(props) {
   return (

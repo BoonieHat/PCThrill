@@ -6,15 +6,17 @@ export default css.global`
     font-family: "Inter", sans-serif;
   }
   h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
     margin: 0;
   }
   ::-moz-selection { /* Code for Firefox */
-  color: white;
-  background: #33e2c5;
+    color: white;
+    background: black;
   }
 
   ::selection {
     color: white;
-    background: #33e2c5;
+    background: black;
   }
 `
