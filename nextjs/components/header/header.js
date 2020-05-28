@@ -11,12 +11,12 @@ function Header(props) {
   const [zoom, setZoom] = useState(onLoadZoom)
   const [mounted, setMounted] = useState(false)
   const switchTheme = () => {
-    const setTo = theme === 'dark' ? 'light' : 'dark'
+    const setTo = theme === 'light' ? 'dark' : 'light'
     setTheme(setTo)
   }
 
   const switchZoom = () => {
-    const setTo = zoom === 'bigger' ? 'smaller' : 'bigger'
+    const setTo = zoom === 'smaller' ? 'bigger' : 'smaller'
     setZoom(setTo)
   }
 
