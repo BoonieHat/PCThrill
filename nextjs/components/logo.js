@@ -1,6 +1,6 @@
 function svglogo(props) {
   return (
-    <svg className={props.className} xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 200 200">
+    <svg className={props.className} xmlns="http://www.w3.org/2000/svg" id="pcthrillicon" data-name="pcthrillicon" viewBox="0 0 200 200">
       <path 
       d="M-385.28,308.12c-1.63-.12-3.64-.12-6-.12h-8.77v20.16h8.77c2.38,0,4.39,0,6-.12,5.76-.48,9.14-3.72,9.14-10S-379.52,308.6-385.28,308.12Z" 
       transform="translate(443 -269)"

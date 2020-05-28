@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import SvgLogo from '../components/logo';
 import main from '../components/main.module.css';
+import { Sun, Moon } from 'react-feather'
 
 function Header(props) {
   return (
@@ -14,14 +15,7 @@ function Header(props) {
           </Link>
           <div className={`${main.mlauto}`}>
             <button className={`${main.buttonHeader}`}>
-              <Link href="/">
-                <a alt="Go to About Subscribe">Subscribe</a>
-              </Link>
-            </button>
-            <button className={`${main.buttonHeader}`}>
-              <Link href="/">
-                <a alt="Go to About Page">About</a>
-              </Link>
+              <Sun />
             </button>
           </div>
         </div>
