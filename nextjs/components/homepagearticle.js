@@ -19,6 +19,7 @@ function ArticleCard(props) {
             </div>
           </div>
           <div className={main.articleCardPublish}>
+            <span>{props.author}</span>
             <time>{new Date(props.updated).toDateString()}</time>
           </div>
         </a>

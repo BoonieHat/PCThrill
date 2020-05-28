@@ -174,22 +174,14 @@
   color: rgb(68, 68, 68);
 }
 
-@media only screen and (max-width: 800px) {
-  .indexArticles {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media only screen and (max-width: 1300px) {
+  .articleCardImage img { max-width: 75%; }
+  .articleCardHeader { width: 75%; }
 }
 
-@media only screen and (max-width: 600px) {
- .articleCard .articleCardImage{
-    border-radius: 5px;
-  }
-  .articleCard {
-    border-radius: 5px;
-  }
-  .indexArticles {
-    grid-template-columns: repeat(1, 1fr);
-  }
+@media only screen and (max-width: 700px) {
+  .articleCardImage img { max-width: 50%; }
+  .articleCardHeader { width: 90%; }
 }
 
 .container {
