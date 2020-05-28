@@ -1,0 +1,50 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://use.typekit.net/cyw3eir.css');
+
+:root {
+  --heading-color: #000;
+  --font-color: #000;
+  --header-bg-color: #ffffffed;
+  --bg-color: #fff;
+  --highlight-color: black;
+  --highlight-font-color: #fff;
+  --article-font-size: 23px;
+}
+
+[data-theme="dark"] {
+  --heading-color: #fff;
+  --font-color: #fff;
+  --header-bg-color: #000000ed;
+  --bg-color: #000;
+  --highlight-color: #84ffb5;
+  --highlight-font-color: #fff;
+}
+
+[data-zoom="bigger"] {
+  --article-font-size: 26px;
+}
+
+body {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+* { transition: background .2s linear; }
+
+::-moz-selection {
+  color: var(--highlight-font-color);
+  background: var(--highlight-color); 
+}
+::selection {
+  color: var(--highlight-font-color);
+  background: var(--highlight-color); 
+}

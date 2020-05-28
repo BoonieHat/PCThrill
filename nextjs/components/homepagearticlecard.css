@@ -1,0 +1,83 @@
+.articleCard {
+  transition: .5s;
+  background: white;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  width: 100%;
+  max-height: 300px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.articleCard:nth-child(7n+1):hover { background: #f4eeff; }
+.articleCard:nth-child(7n+2):hover { background: #eef9bf; }
+.articleCard:nth-child(7n+3):hover { background: #ffd5e5; }
+.articleCard:nth-child(7n+4):hover { background: #f8b195; }
+.articleCard:nth-child(7n+5):hover { background: #aeeff0; }
+.articleCard:nth-child(7n+6):hover { background: #fffbbe; }
+.articleCard:nth-child(7n+7):hover { background: #cadefc; }
+
+.articleFlex {
+  display: flex;
+  max-height: 100%;
+}
+
+.articleCardHeader {
+  width: 60%;
+}
+
+.articleCardHeader p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.articleCardImage {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+}
+
+.articleCardImage img {
+  border-radius: 5px;
+  max-height: 100%;
+}
+
+.articleCard a {
+  text-decoration: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.articleCard h1 {
+  font-size: 35px;
+  font-weight: 900;
+  color: black;
+}
+
+.articleCard p {
+  color: black;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.articleCard time {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
+}
+
+@media only screen and (max-width: 1300px) {
+  .articleCardImage img { max-width: 75%; }
+  .articleCardHeader { width: 75%; }
+}
+
+@media only screen and (max-width: 700px) {
+  .articleCardImage img { max-width: 50%; }
+  .articleCardHeader { width: 90%; }
+}

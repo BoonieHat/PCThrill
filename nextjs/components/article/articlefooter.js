@@ -1,15 +1,14 @@
 import client from '../../client'
 import groq from 'groq'
-import main from '../main.module.css';
 
 import ArticleCard from "../homepagearticle";
 
 function article(props) {
   return (
-    <div className={main.container}>
-      <div className={main.articleFooter}>
+    <div className="container">
+      <div className="articleFooter">
         <h3>Latest Articles you might like</h3>
-        <div className={main.indexArticles}>
+        <div className="indexArticles">
           {props.props.map(({ _id, title = '', slug = '', _updatedAt = '', mainImage = '' }) => slug && (
             <ArticleCard key={_id} title={title} slug={slug.current} updated={_updatedAt} image={mainImage} />)
           )}

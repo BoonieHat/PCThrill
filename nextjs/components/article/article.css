@@ -75,17 +75,19 @@
 .content h4 { font-size: 30px; }
 .content h5 { font-size: 26px; }
 .content h1, .content h2, .content h3, .content h4, .content h5 {
+  color: var(--heading-color);
   font-weight: 900;
   margin: 20px 0px 10px;
 }
 
 .content p, .content a {
-  font-size: 23px;
+  font-size: var(--article-font-size);
   line-height: 40px;
   font-weight: 400;
 }
 
 .content p {
+  color: var(--font-color);
   margin: 0px 0px 50px;
 }
 

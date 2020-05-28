@@ -1,19 +1,16 @@
-import Link from 'next/link'
-import main from '../components/main.module.css';
-import SvgLogo from '../components/logo';
-
+import SvgLogo from '../logo';
 
 function footer(props) {
   return (
-    <footer className={main.footer}>
-      <div className={main.socialmedia}>
+    <footer className="footer">
+      <div className="socialmedia">
         <a href="https://twitter.com/PcThrill">Twitter</a>
         <a href="https://www.instagram.com/pcthrill/">Instagram</a>
         <a href="https://www.pinterest.com/pcthrill/">Pinterest</a>
         <a href="https://www.reddit.com/user/pcthrill">Reddit</a>
       </div>
 
-      <div className={main.policy}>
+        <div className="policy">
         Google
         <a href="https://policies.google.com/privacy">Privacy Policy</a>
         and
@@ -21,9 +18,9 @@ function footer(props) {
         apply.
       </div>
 
-      <SvgLogo className={`${main.footerLogo}`} />
+      <SvgLogo className="footerLogo" />
 
-      <div className={main.copyright}>© 2020 PC Thrill</div>
+      <div className="copyright">© 2020 PC Thrill</div>
       
     </footer>
   )

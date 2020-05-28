@@ -1,0 +1,41 @@
+.footer {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 250px;
+  margin-top: 100px;
+  padding: 20px;
+  color: rgb(99, 102, 105);
+}
+
+.footer .socialmedia {
+  padding: 10px;
+}
+
+.footer .socialmedia a {
+  text-decoration: none;
+  margin: 0px 5px;
+  color: #2db19b;
+  border-bottom: 2px dotted #2db19b;
+}
+
+.footer .policy {
+  padding: 10px;
+}
+
+.footer .policy a {
+  text-decoration: none;
+  margin: 0px 5px;
+  color: #2db19b;
+  border-bottom: 2px dotted #2db19b;
+}
+
+.footerLogo {
+  margin-top: 10px;
+  height: 60px;
+  margin-bottom: 10px;
+}
