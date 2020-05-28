@@ -9,13 +9,18 @@ function ArticleCard(props) {
     <div className={main.articleCard} alt="Article Headline Image">
       <Link href="/article/[slug]" as={`/article/${props.slug}`}>
         <a>
-          <div className={main.articleCardImage} style={{ backgroundImage: `url(${urlFor(props.image).width(300).url()})` }}></div>
-          <div className={main.mtAuto}>
+          <div className={main.articleCardHeader}>
+            <h1>{props.title}</h1>
+            <p>{props.starter}</p>
+          </div>
+          <div className={main.articleCardImage}>
+            <img src={urlFor(props.image).width(300).url()} alt="Article Headline Image" />
+          </div>
+          <div className={main.articleCardPublish}>
             <time>{new Date(props.updated).toDateString()}</time>
-            <h2>{props.title}</h2>
           </div>
         </a>
-      </Link>{' '}
+      </Link>
     </div>
   )
 }

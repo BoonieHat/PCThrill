@@ -3,7 +3,7 @@ import client from '../../client'
 import groq from 'groq'
 import main from '../main.module.css';
 
-import ArticleCard from "../articlecard";
+import ArticleCard from "../homepagearticle";
 
 function article(props) {
   return (

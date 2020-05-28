@@ -36,8 +36,8 @@ function Index(props) {
             />
           </h1>
           <div className={main.indexArticles}>
-            {posts.map(({ _id, title = '', slug = '', _updatedAt = '', mainImage = '' }) => slug && (
-              <HomePageArticle key={_id} title={title} slug={slug.current} updated={_updatedAt} image={mainImage} />)
+            {posts.map(({ _id, title = '', body = '', slug = '', _updatedAt = '', mainImage = '' }) => slug && (
+              <HomePageArticle key={_id} title={title} starter={body[0].children[0].text} slug={slug.current} updated={_updatedAt} image={mainImage} />)
             )}
           </div>
         </main>
