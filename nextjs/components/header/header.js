@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import SvgLogo from '../logo';
-import { Sun, Moon, ZoomOut, ZoomIn } from 'react-feather';
+import { Sun, Moon, ZoomOut, ZoomIn, Bold, Share } from 'react-feather';
 import '../../utils/header';
 import React, { useState, useEffect } from 'react'
 
@@ -48,6 +48,12 @@ function Header(props) {
             </a>
           </Link>
             <div className="mlauto">
+            <button className="buttonHeader">
+              <Share />
+            </button>
+            <button className="buttonHeader">
+              <Bold /> 
+            </button>
             <button className="buttonHeader" onClick={() => switchZoom()}>
               {zoom === 'bigger' ? <ZoomOut /> : <ZoomIn />}
             </button>
