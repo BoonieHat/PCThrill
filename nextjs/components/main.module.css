@@ -24,12 +24,12 @@
 .mrAuto { margin-right: auto; }
 
 .header {
-  background-color: #000;
+  background-color: #ffffffed;
   z-index: 1000;
   width: 100%;
   top: 0;
   position: fixed;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .headerContainer {
@@ -49,11 +49,11 @@
 }
 .headerLogo {
   height: 40px;
-  fill: #fff;
+  fill: black;
 }
 
 .buttonHeader {
-  color: #fff;
+  color: black;
   background-color: transparent;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
@@ -74,7 +74,7 @@
 
 .buttonHeader:hover, .buttonHeader.active {
   transition: 0.5s;
-  background-color: rgb(20, 20, 20);
+  color: rgb(119, 119, 119);
 }
 
 .indexContent {
