@@ -108,18 +108,29 @@
   background: white;
   grid-column-start: auto;
   grid-row-start: auto;
-  display: flex;
   width: 100%;
   min-height: 300px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  display: flex;
   border-bottom: 2px solid #f1f1f1;
 }
 
+.articleCard:nth-child(7n+1):hover { background: #f4eeff; }
+.articleCard:nth-child(7n+2):hover { background: #eef9bf; }
+.articleCard:nth-child(7n+3):hover { background: #ffd5e5; }
+.articleCard:nth-child(7n+4):hover { background: #f8b195; }
+.articleCard:nth-child(7n+5):hover { background: #aeeff0; }
+.articleCard:nth-child(7n+6):hover { background: #fffbbe; }
+.articleCard:nth-child(7n+7):hover { background: #cadefc; }
+
+.articleFlex {
+  display: flex;
+}
+
 .articleCardHeader {
-  width: 50%;
-  display: inline-block;
+  width: 60%;
 }
 
 .articleCardHeader p {
@@ -130,24 +141,12 @@
 }
 
 .articleCardImage {
-  display: inline-block;
-max-width: 100%;
-  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+}
+
+.articleCardImage img {
   border-radius: 5px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: black;
-  transition: 0.5s;
-}
-
-.articleCard:hover {
-  background: black;
-  color: white;
-}
-
-.articleCard:hover h1, .articleCard:hover time, .articleCard:hover p  {
-  color: white;
 }
 
 .articleCard a {
